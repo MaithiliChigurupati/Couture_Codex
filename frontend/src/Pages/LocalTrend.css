@@ -1,0 +1,96 @@
+/* LocalTrends.css */
+
+/* Container */
+.local-trends-container {
+    width: 100%;
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Align items with space between to push footer to bottom */
+    color: #926c7d;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in total height */
+}
+
+/* Title */
+.local-trends-title {
+    font-size: 3em;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Product Information */
+.product-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-name {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.product-message {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.sales-count {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* No Product Info Message */
+.no-product-info {
+    font-size: 1em;
+    color: #ccc;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .local-trends-title {
+        font-size: 2.5em;
+    }
+
+    .product-name {
+        font-size: 1.5em;
+    }
+
+    .product-message {
+        font-size: 1em;
+    }
+
+    .sales-count {
+        font-size: 1.2em;
+    }
+}

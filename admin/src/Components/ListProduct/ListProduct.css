@@ -1,0 +1,138 @@
+/* .listproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 740px;
+  padding: 10px 50px;
+  margin: 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+.listproduct-format-main{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0px;
+  color: #454545;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.listproduct-format{
+  width: 100%;
+  align-items: center;
+  font-weight: 500;
+}
+.listproduct-product-icon{
+    height: 80px;
+}
+.listproduct-remove-icon{
+  cursor: pointer;
+  margin: auto;
+}
+.listproduct-allproducts{
+  width: 100%;
+  overflow-y: auto;
+}
+.listproduct-allproducts::-webkit-scrollbar{
+    display: none;
+}
+@media(max-width:800px){
+  .listproduct {
+    box-sizing: border-box;
+    width: 95%;
+    height: 100%;
+    padding: 10px 30px;
+    margin: 20px auto;
+  }
+  .listproduct-format-main{
+    padding: 15px 0px;
+    color: #454545;
+    font-size: 12px;
+  }
+  .listproduct-product-icon{
+    height: 60px;
+}
+} */
+
+
+
+
+
+.listproduct {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 50px;
+  margin: 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.listproduct-format-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd; /* Add a border for separation */
+}
+
+.listproduct-format {
+  flex: 1;
+  text-align: center;
+}
+
+.listproduct-product-icon {
+  height: 80px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.listproduct-remove-icon {
+  cursor: pointer;
+}
+
+.listproduct-allproducts {
+  width: 100%;
+}
+
+.listproduct-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Add a border for separation */
+}
+
+.listproduct-item {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .listproduct {
+    width: 95%;
+    padding: 10px 30px;
+    margin: 20px auto;
+  }
+  .listproduct-format-main,
+  .listproduct-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .listproduct-product-icon {
+    height: 60px;
+  }
+  .listproduct-format,
+  .listproduct-item {
+    min-width: 80px;
+    margin-bottom: 10px;
+  }
+}
